@@ -4,7 +4,7 @@
  * @link https://github.com/merry-goblin/barcode-reader-composer
  */
 
-namespace MerryGoblin\BarcodeReader;
+namespace MerryGoblin\BarcodeReader\Services\Barcode;
 
 use Symfony\Component\Process\Process;
 
