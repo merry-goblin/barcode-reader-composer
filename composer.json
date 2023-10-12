@@ -2,7 +2,7 @@
     "name": "merry-goblin/barcode-reader-composer",
     "description": "A PHP wrapper for Zbar. Decodes images/photos containing QR codes.",
     "keywords": ["zbar","qr","qrcode","decode","php"],
-    "license": "GNU General Public License v3.0",
+    "license": "GNU General Public License v3.0 or later",
     "authors": [
         {
             "name": "Keller Alexandre"
