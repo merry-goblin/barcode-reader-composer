@@ -19,7 +19,7 @@ class BarcodeReader
 
 	/**
 	 * @param string $fullFilePath
-	 * @return string
+	 * @return string[]
 	 * @throws ProcessFailedException
      * @throws ParseBarcodeException
 	 */
