@@ -21,6 +21,7 @@ class BarcodeReader
 	 * @param string $fullFilePath
 	 * @return string
 	 * @throws ProcessFailedException
+     * @throws ParseBarcodeException
 	 */
 	public function parse($fullFilePath)
 	{
@@ -32,6 +33,23 @@ class BarcodeReader
 			throw new ProcessFailedException($process);
 		}
 
-		return $process->getOutput();
+		$output = $process->getOutput();
+        return $this->splitOutput($output);
 	}
+
+    /**
+     * @param string $output
+     * @return string[]
+     * @throws ParseBarcodeException
+     */
+    protected function splitOutput($output)
+    {
+        $output = trim($output);
+        $outputArray = explode(':', $output);
+        if (count($outputArray) !== 2) {
+            throw new ParseBarcodeException();
+        }
+
+        return $outputArray;
+    }
 }
