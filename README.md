@@ -10,7 +10,7 @@ Barcode reader in PHP. Requires ZBar &amp; Imagick
 
 ### Install
 
-- composer require merry-goblin/barcode-reader-composer:"dev-master"
+- composer require merry-goblin/barcode-reader-composer:"dev-main"
 
 --------------------------
 
